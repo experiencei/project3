@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+body {
+box-sizing: border-box;
+margin: 0 auto;
+padding: 0 auto;
+font-family: "spartan" spartan;
+}
+.animation {
+animation: flop 2s forwards;
+}
+@keyframes flop {
+from{
+opacity: 0;
+transform: translateY(-2em);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+.container{
+max-width: 75rem;
+width: 75%;
+display: flex;
+margin: 0 auto;
+}
+.bg_header{
+background-image: url(./images/mobile-image-hero-1.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 60vh;
+position: relative;
+display: flex;
+}
+.room_text{
+position: absolute;
+text-align: center;
+right: 10em;
+margin-top: 4em;
+}
+.hamburger_phone{
+position: absolute;
+margin-top: 3.9em;
+left: 2.4em;
+
+}
+.room_text--desktop{
+display: none;
+}
+.arrow_black {
+color: white;
+background-color: black;
+position: absolute;
+font-size: large;
+word-spacing: 1.5em;
+bottom: 0em;
+right: 0em;
+display: inline-block;
+height: 2.9em;
+width: 5.9em;
+border: none;
+padding-top: .3em;
+padding-right: .1em;
+padding-left: .4em;
+
+}
+a {
+text-decoration: none;
+color: white;
+font-size: 2rem;
+margin-left: .1em;
+
+}
+.holder_text--hamburger{
+margin-left: 0 auto;
+margin-right:0 auto;
+display: block; 
+}
+article{
+width:85% ;
+margin: 0 auto;
+}
+.article_haed {
+font-size: 2rem !important;  
+margin-top: 1.2em;
+padding-top: .8em;
+line-height: .9em;
+padding-bottom: .6em;
+font-weight: bold;
+}
+.article_para{
+color: hsl(0, 0%, 41%);
+font-size:1.2rem ;
+padding-bottom: 2em;
+}
+.article_low{
+text-transform: uppercase;
+font-size: 1.2rem;
+font-weight:70px ;
+letter-spacing: .2em;
+margin-bottom: 2em;
+}
+.article_low::after{
+content: '';
+color: black;
+width: 30px;
+height: 3px;
+position: absolute;
+}
+.section_header {
+font-size:  1rem;
+font-weight: bold;
+text-transform:uppercase ;
+letter-spacing: .3em;
+margin: 2.4em 0 .7em;
+
+}
+.section_para {
+color: hsl(0, 0%, 41%);
+font-size:1.2rem ;
+margin-bottom: 3em;
+}
+section {
+width:85% ;
+margin: 0 auto;
+}
+.all_wrapper {
+max-width: 75rem;
+}
+img {
+width: 100%;
+
+}
+.bg_header2{
+background-image: url(./images/mobile-image-hero-3.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 60vh;
+position: relative;
+display: flex;
+}
+.bg_header3{
+background-image: url(./images/mobile-image-hero-2.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 60vh;
+position: relative;
+display: flex;
+}
+.arrow_black--desktp {
+display: none;
+}
+@media screen and (min-width:539px){
+.room_text{
+position: absolute;
+text-align: center;
+right: 14em;
+margin-top: 4em;
+}
+.article_haed {
+font-size: 2.4rem !important;  
+margin-top: 1.2em;
+padding-top: .8em;
+line-height: .9em;
+padding-bottom: .6em;
+font-weight: bold;
+}
+.article_para{
+color: hsl(0, 0%, 41%);
+font-size:1.6rem ;
+padding-bottom: 2em;
+}
+.section_header {
+font-size:  1.3rem;
+font-weight: bold;
+text-transform:uppercase ;
+letter-spacing: .3em;
+margin: 2.4em 0 .7em;
+
+}
+.section_para {
+color: hsl(0, 0%, 41%);
+font-size:1.6rem ;
+margin-bottom: 3em;
+}
+}
+@media screen and (min-width:770px){
+.room_text{
+position: absolute;
+text-align: center;
+right: 20em;
+margin-top: 4em;
+}
+.article_haed {
+font-size: 2.8rem !important;  
+margin-top: 1.2em;
+padding-top: .8em;
+line-height: .9em;
+padding-bottom: .6em;
+font-weight: bold;
+}
+.article_para{
+color: hsl(0, 0%, 41%);
+font-size:1.9rem ;
+padding-bottom: 2em;
+}
+.section_header {
+font-size:  1.5rem;
+font-weight: bold;
+text-transform:uppercase ;
+letter-spacing: .3em;
+margin: 2.4em 0 .7em;
+
+}
+.section_para {
+color: hsl(0, 0%, 41%);
+font-size:1.9rem ;
+margin-bottom: 3em;
+}
+.article_low{
+text-transform: uppercase;
+font-size: 1.5rem;
+font-weight:70px ;
+letter-spacing: .2em;
+margin-bottom: 2em;
+}
+}
+@media screen and (min-width:1050px ){
+.room_text{
+display: none;
+}
+.room_text--desktop{
+display: flex;
+}
+.hamburger_phone{
+display: none;
+}
+.desktop_mode--1{
+display: grid;
+grid-template-columns: 60% 40%;
+}
+.room_icon--desktop{
+position: absolute;
+left: 2.5em;
+top:  3em;
+font-size: 1.4rem;
+}
+.nav--items > a {
+float: left;
+font-size: 1rem;
+margin-left: 4.9em;
+margin-top:4.4em ;
+
+}
+/* .article >.arrow_black--desktop{
+color: white;
+background-color: black;
+position: absolute;
+font-size: large;
+word-spacing: 1.5em;
+bottom: 0em;
+left: 0em;
+display: inline-block;
+height: 2.9em;
+width: 5.9em;
+border: none;
+/* padding-top: .3em;
+padding-right: .1em;
+padding-left: .4em; */
+
+/* } */ */
+a {
+text-decoration: none;
+color: white;
+font-size: 2rem;
+margin-left: .1em;
+
+}
+.part_two--section{
+display: grid;
+grid-template-columns: 30% 40% 30%;
+grid-template-rows: 100%;
+}
+.second_image , .third_image {
+height: auto;
+}
+.section_para {
+color: hsl(0, 0%, 41%);
+font-size:1.3rem ;
+margin-bottom: 0;
+}
+.article_haed {
+font-size: 2rem !important;  
+margin-top: 3em;
+padding-top: .8em;
+line-height: .9em;
+padding-bottom: .6em;
+font-weight: bold;
+}
+
+
+.arrow_black {
+color: white;
+background-color: black;
+position: absolute;
+font-size: large;
+word-spacing: 1.5em;
+bottom: 0em;
+right: -6.4em;
+display: inline-block;
+height: 2.9em;
+width: 5.9em;
+border: none;
+padding-top: .3em;
+padding-right: .1em;
+padding-left: .4em;
+
+}
+.article_low{
+text-transform: uppercase;
+font-size: 1.2rem;
+font-weight:70px ;
+letter-spacing: .2em;
+margin-bottom: 5em;
+}
+.section_header {
+font-size:  1.7rem;
+font-weight: bold;
+text-transform:uppercase ;
+letter-spacing: .3em;
+margin: 2.4em 0 .7em;
+
+}}
+@media screen and (min-width:1450px) {
+.nav--items > a {
+float: left;
+font-size: 1.3rem;
+margin-left: 4.9em;
+margin-top:4em ;
+
+}
+.room_icon--desktop{
+position: absolute;
+left: 2.5em;
+top:  3em;
+font-size: 1.7rem;
+}
+}
+@media screen and (min-width:1660px){
+.nav--items > a {
+float: left;
+font-size: 1.5rem;
+margin-left: 4.9em;
+margin-top:4em ;
+
+}
+.room_icon--desktop{
+position: absolute;
+left: 2.5em;
+top:  3em;
+font-size: 1.9rem;
+} 
+.article_low{
+text-transform: uppercase;
+font-size: 1.6rem;
+font-weight:70px ;
+letter-spacing: .2em;
+margin-bottom: 5em;
+}
+}
+@media screen and (max-width: 360px){
+.room_text{
+position: absolute;
+text-align: center;
+right: 7em;
+margin-top: 4em;
+}
+}
